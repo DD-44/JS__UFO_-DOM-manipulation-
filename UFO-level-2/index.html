@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>UFO Finder</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Rancho&effect=anaglyph"
+      rel="font-effect-anaglyph"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <!-- <script>
+      function fillFirstList() {
+        var list1 = document.getElementById("firstList");
+
+        list1.options[0] = new Option("--Select--", "");
+        list1.options[1] = new Option("Date", "Date");
+        list1.options[2] = new Option("City", "City");
+        list1.options[3] = new Option("State", "State");
+        list1.options[4] = new Option("Country", "Country");
+        list1.options[5] = new Option("Shape", "Shape");
+      }
+    </script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"
+              >UFO Sightings
+              <img class="nav-ufo" src="static/images/ufo.svg" />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="hero text-center">
+        <div class="font-effect-anaglyph">
+          <h1>UFO Sightings</h1>
+          <p>The Truth is Out There</p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row margin-top-50">
+          <div class="col-md-2">
+            <aside class="filters">
+              <div class="panel panel-default">
+                <div class="panel-heading">Filter Search</div>
+                <div class="panel-body">
+                  <form>
+                    <!-- <form> -->
+                    <h4>Filter Type</h4>
+                    <select
+                      class="form-control"
+                      id="firstList"
+                      name="firstList"
+                    >
+                      <option value="Select">--Select--</option>
+                      <option value="Date">Date</option>
+                      <option value="City">City</option>
+                      <option value="State">State</option>
+                      <option value="Country">Country</option>
+                      <option value="Shape">Shape</option>
+                      <option value="Duration">Duration</option>
+                    </select>
+                    <br />
+                    <h4>Search Value</h4>
+                    <select
+                      class="form-control"
+                      id="secondList"
+                      name="secondList"
+                    >
+                    </select>
+                    <!-- </form> -->
+                    <br />
+                    <button
+                      id="filter-btn"
+                      type="button"
+                      class="btn btn-default"
+                    >
+                      Filter Table
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="col-md-10">
+            <div id="table-area" class="">
+              <table id="ufo-table" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="table-head">Date</th>
+                    <th class="table-head">City</th>
+                    <th class="table-head">State</th>
+                    <th class="table-head">Country</th>
+                    <th class="table-head">Shape</th>
+                    <th class="table-head">Duration</th>
+                    <th class="table-head">Comments</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <span class="bottom">UFO Sightings</span>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/app.js"></script>
+  </body>
+</html>
