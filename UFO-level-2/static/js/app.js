@@ -4,7 +4,7 @@ var tableData = data;
 // Select the button
 var search = d3.select("#firstList");
 
-search.on("click", function getSearchValues() {
+search.on("change", function getSearchValues() {
   var list1 = document.getElementById("firstList");
   var list2 = document.getElementById("secondList");
   var list1SelectedValue = list1.value;
@@ -92,7 +92,7 @@ search.on("click", function getSearchValues() {
 
   // // Complete the click handler for the form
   var checkList2 = d3.select("#secondList");
-  checkList2.on("click", function() {
+  checkList2.on("change", function() {
     // Select the input element and get the raw HTML node
     var inputElement = d3.select("#secondList");
 
